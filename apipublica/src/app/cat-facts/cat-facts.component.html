@@ -1,0 +1,23 @@
+<div class="datos">
+  <p><strong>Gatos amigo:</strong>tremendos</p>
+  <p>
+    <img height="100" width="100" src="assets/imagenes/cafe.jpg">
+  </p>
+  <h3>Datos generales de gatos.</h3>
+  <table class="table table-striped">
+    <thead>
+      <tr class="row">
+        <th class="col-sm-2"> ID </th>
+        <th class="col-sm-4"> Usuario </th>
+        <th class="col-sm-4"> Texto </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let datogatito of modelosgatos | async" class="row">
+        <td class="col-sm-2"><i>{{ datogatito._id }}</i></td>
+        <td class="col-sm-4"><i>{{ datogatito.user }}</i></td>
+        <td class="col-sm-4"><i>{{ datogatito.text }}</i></td>
+      </tr>
+    </tbody>
+  </table>
+</div>

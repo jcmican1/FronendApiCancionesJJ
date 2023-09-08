@@ -1,0 +1,10 @@
+import { Component } from '@angular/core';
+
+@Component({
+  selector: 'app-pais3',
+  templateUrl: './pais3.component.html',
+  styleUrls: ['./pais3.component.css']
+})
+export class Pais3Component {
+
+}

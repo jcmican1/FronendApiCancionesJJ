@@ -1,0 +1,10 @@
+    <nav class="nav flex-column navbar-dark me-5 {{colorfondo}}">
+        <ul class="navbar-nav">
+            <li class="navbar-item p-2 
+            " *ngFor="let opcion of opciones; let i = index">
+                <a class="nav-link" (click)="presion(i+1)">
+                    {{opcion}}
+                </a>
+            </li>
+        </ul>
+    </nav>
